@@ -13,6 +13,7 @@ const CartItem = ({item,addToCart,removeFromCart})=>(
             </div>
         </div>
         <div className="buttons">
+        <img src={item.image}  alt={item.title} width="100px" height="100px"/>
          <button size='small'
             disableElevation
             variant="contained"
@@ -22,7 +23,7 @@ const CartItem = ({item,addToCart,removeFromCart})=>(
             
             >
                - </button>   
-               <p>{item.amount}</p>
+               <span>{item.amount}</span>
                 <button size='small'
             disableElevation
             variant="contained"
@@ -34,7 +35,7 @@ const CartItem = ({item,addToCart,removeFromCart})=>(
                +</button>   
 
         </div>
-        <img src={item.image}  alt={item.title} width="100px" height="100px"/>
+       
     </div>
 )
 

@@ -16,11 +16,14 @@ code {
   width:100%;
   background-color: black;
   grid-template-columns: repeat(3,1fr);
-  grid-template-rows: auto;
+  /* grid-template-rows: auto; */
   grid-gap:5px;
 }
 .item{
   width:400px;
-  height:500px;
+  border-radius: 20px;
+  height:350px;
+  margin-left: 20px;
+  border:5px solid lightgreen;
   background-color: aqua;
 }

@@ -67,11 +67,12 @@ console.log(data)
       {CalculateTotal1(cartItem).toFixed(0)}
       </span>
      </button>
+     <div className='wrapper'>
       {
         data?.map(item=> 
        ( <Items item={item} addToCart={handleAddToCart}/>))
       }
-      
+      </div>
 
 
     </div>
